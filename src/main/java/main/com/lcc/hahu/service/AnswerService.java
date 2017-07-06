@@ -106,4 +106,64 @@ public class AnswerService {
 
         return pageBean;
     }
+
+    //点赞答案
+    public void likeAnswer(Integer userId,Integer answerId){
+        //更新答案被点赞数量
+        answerMapper.updateLikedCount(answerId);
+        //更新用户的被点赞数量
+        userMapper.updateLikedCountByAnswerId(answerId);
+        Jedis jedis = jedisPool.getResource();
+        jedis.zadd(userId + RedisKey.LIKE_ANSWER, new Date().getTime(), String.valueOf(answerId));
+        jedis.zadd(answerId + RedisKey.LIKED_ANSWER, new Date().getTime(), String.valueOf(userId));
+
+        jedisPool.returnResource(jedis);
+
+        //插入一条点赞的消息
+        Message message = new Message();
+        message.setType(Message.TYPE_LIKED);
+        message.setSecondType(1);
+
+        Date date = new Date();
+        message.setMessageDate(MyUtil.formatDate(date));
+        message.setMessageTime(date.getTime());
+        message.setFromUserId(userId);
+        message.setFromUserName(userMapper.selectUsernameByUserId(userId));
+
+        Question question = questionMapper.selectQuestionByAnswerId(answerId);
+        message.setQuestionId(question.getQuestionId());
+        message.setQuestionTitle(question.getQuestionTitle());
+        message.setAnswerId(answerId);
+        message.setUserId(answerMapper.selectUserIdByAnswerId(answerId));
+        messageMapper.insertTypeLiked(message);
+
+    }
+
+    public Map<String, Object> listTodayHotAnswer() {
+        Map<String, Object> map = new HashMap<>();
+        long period = 1000 * 60 * 60 * 24L;
+        long today = new Date().getTime();
+        System.out.println("period:" + period);
+        System.out.println("today:" + today);
+        System.out.println("today - period:" + (today - period));
+        System.out.println(new Date(today - period));
+        List<Answer> answerList = answerMapper.listAnswerByCreateTime(today - period);
+        map.put("answerList", answerList);
+        return map;
+    }
+
+    public Map<String, Object> listMonthHotAnswer() {
+        Map<String, Object> map = new HashMap<>();
+        long period = 1000 * 60 * 60 * 24 * 30L;
+        long today = new Date().getTime();
+        System.out.println("period:" + period);
+        System.out.println("month:" + today);
+        System.out.println("month - period:" + (today - period));
+        System.out.println(new Date(today - period));
+        List<Answer> answerList = answerMapper.listAnswerByCreateTime(today - period);
+        map.put("answerList", answerList);
+        return map;
+    }
+
+
 }
