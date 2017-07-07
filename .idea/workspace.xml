@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5e9850-13e9-41c7-9b76-6e2ce9415185" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/TopicService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/QuestionService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/TopicService.java" afterPath="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/TopicService.java" />
     </list>
     <ignored path="Hahu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,11 +39,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopicService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TopicService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/TopicService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state relative-caret-position="196">
+              <caret line="147" column="48" selection-start-line="147" selection-start-column="48" selection-end-line="147" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#6227#6237#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/QuestionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,6 +122,7 @@
         <option value="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/AnswerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/CommentService.java" />
         <option value="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/TopicService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/QuestionService.java" />
       </list>
     </option>
   </component>
@@ -128,8 +143,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="252" />
-    <option name="y" value="130" />
+    <option name="x" value="153" />
+    <option name="y" value="25" />
     <option name="width" value="1222" />
     <option name="height" value="700" />
   </component>
@@ -625,15 +640,15 @@
       <option name="presentableId" value="Default" />
       <updated>1498981583990</updated>
       <workItem from="1498981585397" duration="14498000" />
-      <workItem from="1499379892402" duration="2667000" />
+      <workItem from="1499379892402" duration="5378000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17165000" />
+    <option name="totallyTimeSpent" value="19876000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="252" y="130" width="1222" height="700" extended-state="0" />
+    <frame x="153" y="25" width="1222" height="700" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1114,6 +1129,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="e#247#248#0" expanded="false" />
+            <element signature="e#281#282#0" expanded="false" />
+            <element signature="e#581#582#0" expanded="false" />
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#648#649#0" expanded="false" />
+            <element signature="e#682#683#0" expanded="false" />
+            <element signature="e#716#717#0" expanded="false" />
+            <element signature="e#746#747#0" expanded="false" />
+            <element signature="e#792#793#0" expanded="false" />
+            <element signature="e#830#831#0" expanded="false" />
+            <element signature="e#861#862#0" expanded="false" />
+            <element signature="e#888#889#0" expanded="false" />
+            <element signature="e#928#929#0" expanded="false" />
+            <element signature="e#960#961#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1181,6 +1212,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1204,13 +1238,13 @@
         <state relative-caret-position="30">
           <caret line="272" column="10" selection-start-line="272" selection-start-column="10" selection-end-line="272" selection-end-column="10" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5073#5074#0" expanded="true" />
-            <element signature="e#5153#5154#0" expanded="true" />
-            <element signature="e#10263#10271#0" expanded="true" />
-            <element signature="e#11763#11764#0" expanded="true" />
-            <element signature="e#11809#11810#0" expanded="true" />
-            <element signature="e#11959#11975#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#5073#5074#0" expanded="false" />
+            <element signature="e#5153#5154#0" expanded="false" />
+            <element signature="e#10263#10271#0" expanded="false" />
+            <element signature="e#11763#11764#0" expanded="false" />
+            <element signature="e#11809#11810#0" expanded="false" />
+            <element signature="e#11959#11975#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1219,6 +1253,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1227,7 +1264,7 @@
         <state relative-caret-position="286">
           <caret line="149" column="52" selection-start-line="149" selection-start-column="52" selection-end-line="149" selection-end-column="52" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1258,8 +1295,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/TopicService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state relative-caret-position="196">
+          <caret line="147" column="48" selection-start-line="147" selection-start-column="48" selection-end-line="147" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6227#6237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/QuestionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
