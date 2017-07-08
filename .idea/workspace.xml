@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5e9850-13e9-41c7-9b76-6e2ce9415185" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/QuestionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/TopicService.java" afterPath="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/TopicService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/QuestionService.java" afterPath="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/QuestionService.java" />
     </list>
     <ignored path="Hahu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,10 +53,12 @@
       <file leaf-file-name="QuestionService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/QuestionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+            <state relative-caret-position="346">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2111#2141#0" expanded="true" />
+                <element signature="e#8394#8404#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,8 +143,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="153" />
-    <option name="y" value="25" />
+    <option name="x" value="532" />
+    <option name="y" value="58" />
     <option name="width" value="1222" />
     <option name="height" value="700" />
   </component>
@@ -640,15 +640,15 @@
       <option name="presentableId" value="Default" />
       <updated>1498981583990</updated>
       <workItem from="1498981585397" duration="14498000" />
-      <workItem from="1499379892402" duration="5378000" />
+      <workItem from="1499379892402" duration="7907000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19876000" />
+    <option name="totallyTimeSpent" value="22405000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="153" y="25" width="1222" height="700" extended-state="0" />
+    <frame x="532" y="58" width="1222" height="700" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1205,6 +1205,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1306,10 +1309,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/QuestionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        <state relative-caret-position="346">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2111#2141#0" expanded="true" />
+            <element signature="e#8394#8404#0" expanded="true" />
           </folding>
         </state>
       </provider>
