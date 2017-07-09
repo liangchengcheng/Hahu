@@ -3,7 +3,9 @@ package main.com.lcc.hahu.service;
 import main.com.lcc.hahu.mapper.AnswerMapper;
 import main.com.lcc.hahu.mapper.CollectionMapper;
 import main.com.lcc.hahu.mapper.UserMapper;
+import main.com.lcc.hahu.model.Answer;
 import main.com.lcc.hahu.model.Collection;
+import main.com.lcc.hahu.util.MyUtil;
 import main.com.lcc.hahu.util.RedisKey;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -95,6 +97,76 @@ public class CollectionService {
 
         //获取收藏夹内答案id的列表
         Set<String> idSet = jedis.zrange(collectionId+RedisKey.COLLECT,0,-1);
-        Li
+        List<Integer> idList = MyUtil.StringSetToIntegerList(idSet);
+        if (idList.size() > 0) {
+            List<Answer> answerList = answerMapper.listAnswerByAnswerId(idList);
+            map.put("answerList", answerList);
+        }
+
+        //判断是不是在获取自己的收藏夹信息
+        Integer userId = collectionMapper.selectUserIdByCollectionId(collectionId);
+        if (userId.equals(localUserId)){
+            map.put("isSelf",true);
+        }
+        //获取收藏夹信息
+        Collection collection =collectionMapper.selectCollectionByCollectionId(collectionId);
+        Long answerCount = jedis.zcard(collectionId + RedisKey.COLLECT);
+        collection.setAnswerCount(Integer.parseInt(answerCount+""));
+        map.put("collection",collection);
+
+        jedisPool.returnResource(jedis);
+        return map;
+    }
+
+    /**
+     * 判断某人是否关注了某收藏夹
+     */
+    public boolean judgePeopleFollowCollection(Integer userId, Integer collectionId) {
+        Jedis jedis = jedisPool.getResource();
+        Long rank = jedis.zrank(userId + RedisKey.FOLLOW_COLLECTION, String.valueOf(collectionId));
+        jedisPool.returnResource(jedis);
+
+        System.out.println(rank);
+        return rank == null ? false : true;
+    }
+
+    /**
+     * 关注收藏夹
+     */
+    public void followCollection(Integer userId, Integer collectionId) {
+        Jedis jedis = jedisPool.getResource();
+        jedis.zadd(userId + RedisKey.FOLLOW_COLLECTION, new Date().getTime(), String.valueOf(collectionId));
+        jedis.zadd(collectionId + RedisKey.FOLLOWED_COLLECTION, new Date().getTime(), String.valueOf(userId));
+        jedisPool.returnResource(jedis);
+    }
+
+    /**
+     * 取消关注收藏夹
+     */
+    public void unfollowCollection(Integer userId, Integer collectionId) {
+        Jedis jedis = jedisPool.getResource();
+        jedis.zrem(userId + RedisKey.FOLLOW_COLLECTION, String.valueOf(collectionId));
+        jedis.zrem(collectionId + RedisKey.FOLLOWED_COLLECTION, String.valueOf(userId));
+        jedisPool.returnResource(jedis);
+    }
+
+
+    public List<Collection> listFollowingCollection(Integer userId){
+        Jedis jedis = jedisPool.getResource();
+        // 获取所关注的收藏夹的id集合
+        Set<String> idSet = jedis.zrange(userId + RedisKey.FOLLOW_COLLECTION, 0, -1);
+        List<Integer> idList = MyUtil.StringSetToIntegerList(idSet);
+
+        List<Collection> list = new ArrayList<>();
+        if (idList != null && idList.size()>0){
+            list = collectionMapper.listCollectionByCollectionId(idList);
+            for (Collection collection : list){
+                Long answerCount = jedis.zcard(collection.getCollectionId()+RedisKey.COLLECT);
+                collection.setAnswerCount(Integer.parseInt(answerCount+""));
+            }
+        }
+
+        jedisPool.returnResource(jedis);
+        return list;
     }
 }

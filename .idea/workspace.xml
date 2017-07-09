@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5e9850-13e9-41c7-9b76-6e2ce9415185" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/CollectionService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/CollectionService.java" afterPath="$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/CollectionService.java" />
     </list>
     <ignored path="Hahu.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="CollectionService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/CollectionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="97" column="10" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="10" />
+            <state relative-caret-position="466">
+              <caret line="169" column="20" selection-start-line="169" selection-start-column="20" selection-end-line="169" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -615,12 +614,12 @@
       <option name="presentableId" value="Default" />
       <updated>1498981583990</updated>
       <workItem from="1498981585397" duration="14498000" />
-      <workItem from="1499379892402" duration="12147000" />
+      <workItem from="1499379892402" duration="14051000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26645000" />
+    <option name="totallyTimeSpent" value="28549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="499" y="58" width="1222" height="700" extended-state="0" />
@@ -1330,8 +1329,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/CollectionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="97" column="10" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="10" />
+        <state relative-caret-position="466">
+          <caret line="169" column="20" selection-start-line="169" selection-start-column="20" selection-end-line="169" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
