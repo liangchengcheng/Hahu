@@ -263,7 +263,6 @@ public class UserService {
         jedis.zrem(localUserId + RedisKey.FOLLOW_PEOPLE, String.valueOf(userId));
         jedis.zrem(userId + RedisKey.FOLLOWED_PEOPLE, String.valueOf(localUserId));
         jedisPool.returnResource(jedis);
-
     }
 
     /**
