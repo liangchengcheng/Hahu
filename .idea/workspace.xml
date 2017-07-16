@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5e9850-13e9-41c7-9b76-6e2ce9415185" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/CollectionMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/CommentMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/MessageMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/QuestionMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/TopicMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Hahu.iws" />
@@ -42,17 +41,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageMapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MessageMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/MessageMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+            <state relative-caret-position="71">
+              <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
               <folding>
                 <marker date="1500178398000" expanded="true" signature="251:458" ph="insert into message... " />
                 <marker date="1500178398000" expanded="true" signature="516:803" ph="insert into message... " />
                 <marker date="1500178398000" expanded="true" signature="863:1174" ph="insert into message... " />
                 <marker date="1500178398000" expanded="true" signature="1233:1520" ph="insert into message... " />
                 <marker date="1500178398000" expanded="true" signature="1622:1677" ph="select * fro... message" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuestionMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/QuestionMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1065">
+              <caret line="71" column="66" selection-start-line="71" selection-start-column="66" selection-end-line="71" selection-end-column="66" />
+              <folding>
+                <marker date="1500178762000" expanded="true" signature="327:572" ph="select last_... " />
+                <marker date="1500178762000" expanded="true" signature="638:727" ph="insert into question_topic... " />
+                <marker date="1500178762000" expanded="true" signature="838:894" ph="select * fro... question" />
+                <marker date="1500178762000" expanded="true" signature="981:1036" ph="select count... question" />
+                <marker date="1500178762000" expanded="true" signature="1140:1266" ph="select quest... question" />
+                <marker date="1500178762000" expanded="true" signature="1368:1456" ph="select quest... question" />
+                <marker date="1500178762000" expanded="true" signature="1544:1615" ph="select count... question_topic" />
+                <marker date="1500178762000" expanded="true" signature="1698:1833" ph="select quest... question_topic" />
+                <marker date="1500178762000" expanded="true" signature="1941:2187" ph="select quest... question" />
+                <marker date="1500178762000" expanded="true" signature="2352:2736" ph="select q.que... answer" />
+                <marker date="1500178762000" expanded="true" signature="2443:2700" ph="select q.que... question_topic" />
+                <marker date="1500178762000" expanded="true" signature="2845:2991" ph="select quest... question" />
+                <marker date="1500178762000" expanded="true" signature="2930:2990" ph="select quest... answer" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TopicMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/TopicMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-150">
+              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+              <folding>
+                <marker date="1500179169000" expanded="true" signature="561:629" ph="select topic... topic" />
+                <marker date="1500179169000" expanded="true" signature="723:786" ph="select topic... topic" />
+                <marker date="1500179169000" expanded="true" signature="873:992" ph="select topic... topic" />
+                <marker date="1500179169000" expanded="true" signature="1086:1203" ph="select topic... topic" />
+                <marker date="1500179169000" expanded="true" signature="1298:1402" ph="select topic... topic" />
+                <marker date="1500179169000" expanded="true" signature="1487:1553" ph="select quest... question_topic" />
+                <marker date="1500179169000" expanded="true" signature="1981:2069" ph="update topic... " />
+                <marker date="1500179169000" expanded="true" signature="2170:2232" ph="select * fro... topic" />
               </folding>
             </state>
           </provider>
@@ -135,6 +177,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/CollectionMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/CommentMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/MessageMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/QuestionMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/TopicMapper.xml" />
       </list>
     </option>
   </component>
@@ -155,7 +199,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="513" />
+    <option name="x" value="120" />
     <option name="y" value="63" />
     <option name="width" value="1222" />
     <option name="height" value="695" />
@@ -748,16 +792,16 @@
       <updated>1498981583990</updated>
       <workItem from="1498981585397" duration="14498000" />
       <workItem from="1499379892402" duration="22261000" />
-      <workItem from="1500176699652" duration="1227000" />
+      <workItem from="1500176699652" duration="2339000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37986000" />
+    <option name="totallyTimeSpent" value="39098000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="513" y="63" width="1222" height="695" extended-state="0" />
-    <editor active="false" />
+    <frame x="120" y="63" width="1222" height="695" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -772,7 +816,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -839,22 +883,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3570">
-          <caret line="265" column="0" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/main/com/lcc/hahu/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1023,6 +1051,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="149" column="52" selection-start-line="149" selection-start-column="52" selection-end-line="149" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1262,14 +1293,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/MessageMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
+        <state relative-caret-position="71">
+          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
           <folding>
             <marker date="1500178398000" expanded="true" signature="251:458" ph="insert into message... " />
             <marker date="1500178398000" expanded="true" signature="516:803" ph="insert into message... " />
             <marker date="1500178398000" expanded="true" signature="863:1174" ph="insert into message... " />
             <marker date="1500178398000" expanded="true" signature="1233:1520" ph="insert into message... " />
             <marker date="1500178398000" expanded="true" signature="1622:1677" ph="select * fro... message" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/QuestionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="66" selection-start-line="71" selection-start-column="66" selection-end-line="71" selection-end-column="66" />
+          <folding>
+            <marker date="1500178762000" expanded="true" signature="327:572" ph="select last_... " />
+            <marker date="1500178762000" expanded="true" signature="638:727" ph="insert into question_topic... " />
+            <marker date="1500178762000" expanded="true" signature="838:894" ph="select * fro... question" />
+            <marker date="1500178762000" expanded="true" signature="981:1036" ph="select count... question" />
+            <marker date="1500178762000" expanded="true" signature="1140:1266" ph="select quest... question" />
+            <marker date="1500178762000" expanded="true" signature="1368:1456" ph="select quest... question" />
+            <marker date="1500178762000" expanded="true" signature="1544:1615" ph="select count... question_topic" />
+            <marker date="1500178762000" expanded="true" signature="1698:1833" ph="select quest... question_topic" />
+            <marker date="1500178762000" expanded="true" signature="1941:2187" ph="select quest... question" />
+            <marker date="1500178762000" expanded="true" signature="2352:2736" ph="select q.que... answer" />
+            <marker date="1500178762000" expanded="true" signature="2443:2700" ph="select q.que... question_topic" />
+            <marker date="1500178762000" expanded="true" signature="2845:2991" ph="select quest... question" />
+            <marker date="1500178762000" expanded="true" signature="2930:2990" ph="select quest... answer" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/lcc/hahu/mapper/TopicMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-150">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+          <folding>
+            <marker date="1500179169000" expanded="true" signature="561:629" ph="select topic... topic" />
+            <marker date="1500179169000" expanded="true" signature="723:786" ph="select topic... topic" />
+            <marker date="1500179169000" expanded="true" signature="873:992" ph="select topic... topic" />
+            <marker date="1500179169000" expanded="true" signature="1086:1203" ph="select topic... topic" />
+            <marker date="1500179169000" expanded="true" signature="1298:1402" ph="select topic... topic" />
+            <marker date="1500179169000" expanded="true" signature="1487:1553" ph="select quest... question_topic" />
+            <marker date="1500179169000" expanded="true" signature="1981:2069" ph="update topic... " />
+            <marker date="1500179169000" expanded="true" signature="2170:2232" ph="select * fro... topic" />
           </folding>
         </state>
       </provider>
